@@ -10,7 +10,7 @@ function NavbarLayout() {
       {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3" id='navbar'>
           <Container fluid>
-            <Navbar.Brand to="/" as={Link}>Company Logo</Navbar.Brand>
+            <Navbar.Brand to="/" as={Link}>TMUI</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -18,14 +18,13 @@ function NavbarLayout() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Company Logo
-                </Offcanvas.Title>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>TMUI</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link to="/" as={Link} id='navTxt'>Home</Nav.Link>
-                  <Nav.Link to="/test" as={Link} id='navTxt'>About</Nav.Link>
+                  <Nav.Link to="/dashboard" as={Link} id='navTxt'>Dashboard</Nav.Link>
+                  <Nav.Link to="/friends" as={Link} id='navTxt'>Friends</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
