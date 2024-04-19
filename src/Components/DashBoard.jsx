@@ -1,25 +1,23 @@
 import React from 'react'
+import { Navbar, Nav } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const TestFile = () => {
   return (
     <>
-    <div id='dashBoard'>
-      <div className="container" id='containerOne'>
-
+      <div id='dashBoard' className='mt-5'>
         <div className='container-fluid' id='containerOneChild'>
-          Test section 1
-        </div>
 
+          hello
 
-        <div className='container-fluid' id='containerTwoChild'> 
-          Test section 2
+          <Navbar id='justifyNavbar' className='py-3'>
+            <Nav.Link to="/" as={Link} id='bottomNav'>Home</Nav.Link>
+            <Nav.Link to="/" as={Link} id='bottomNav'>Inbox</Nav.Link>
+            <Nav.Link to="/" as={Link} id='bottomNav'>Home</Nav.Link>
+            <Nav.Link to="/" as={Link} id='bottomNav'>Home</Nav.Link>
+          </Navbar>
         </div>
-          
-        </div>
-        <div className="container" id='containerTwo'>
-          Test Route 2
       </div>
-    </div>
     </>
   )
 }

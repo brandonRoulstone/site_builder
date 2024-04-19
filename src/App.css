@@ -197,26 +197,103 @@
   min-height: 100vh;
 }
 
-#containerOne{
+#justifyNavbar{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  border: 1px solid #7d2ae8;
+  background-color: #3b0582;
+  color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transition: all 1s ease-in-out;
+  position: fixed;
+  width: 50%;
+  bottom: 0%;
+}
+
+#bottomNav{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
+  background-color: blueviolet;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  z-index: 33 !important;
 }
 
-#containerOneChild, #containerTwoChild{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 50vh;
-  border: 1px solid #7d2ae8;
+#bottomNav:nth-child(1):hover::before{
+  position: absolute;
+  content: "";
+  background-color: rgb(142, 178, 210);
+  top: -85%;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  z-index: 1 !important;
+  transition: all 1s ease-in-out !important;
+  animation-name: opacitate;
+  animation-duration: 0.2s;
 }
 
-/* #containerTwo{
+#bottomNav:nth-child(2):hover::before{
+  position: absolute;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 50px;
+  content: "\f003";
+  background-color: rgb(142, 178, 210);
+  top: -85%;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  z-index: 1 !important;
+  transition: all 1s ease-in-out !important;
+  animation-name: opacitate;
+  animation-duration: 0.2s;
+}
 
-} */
+#bottomNav:nth-child(3):hover::before{
+  position: absolute;
+  content: "";
+  background-color: rgb(142, 178, 210);
+  top: -85%;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  z-index: 1 !important;
+  transition: all 1s ease-in-out !important;
+  animation-name: opacitate;
+  animation-duration: 0.2s;
+}
 
+#bottomNav:nth-child(4):hover::before{
+  position: absolute;
+  content: "";
+  background-color: rgb(142, 178, 210);
+  top: -85%;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  z-index: 1 !important;
+  transition: all 1s ease-in-out !important;
+  animation-name: opacitate;
+  animation-duration: 0.2s;
+}
+
+@keyframes opacitate {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0px);
+  }
+}
 
 @media (max-width: 555px) {
 
