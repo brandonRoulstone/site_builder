@@ -295,6 +295,15 @@
   }
 }
 
+#sideBarButton{
+  font-size: 20px;
+  color: #7d2ae8;
+}
+
+#linkz{
+  color: #4f33ee !important;
+}
+
 @media (max-width: 555px) {
 
   #flexCol{
