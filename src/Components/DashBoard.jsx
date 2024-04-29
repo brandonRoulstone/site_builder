@@ -1,28 +1,20 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 const TestFile = () => {
-  const [isClicked, setClick] = useState(false);
-
-  const click = function (){
-    if(isClicked === true){
-      console.log('clicked');
-     return <div>clicked</div>
-    }
-  }
+  // const [isClicked, setClick] = useState(false);
   return (
     <>
-      <div id='dashBoard' classNameName='mt-5'>
+      <div id='dashBoard' className='mt-5'>
         <div className="flex-shrink-0 p-3 bg-white" style={{width: '250px', height: '100vh'}}>
         <Nav.Link to="/" as={Link} className="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-        <i class="fa-solid fa-chart-line" style={{color: "#000000"}}></i>
         <span className="fs-5 fw-semibold">Collapsible</span>
         </Nav.Link>
         <ul className="list-unstyled ps-0">
           <li className="mb-1">
-            <button className="btn btn-toggle align-items-center collapsed border-0 w-100" data-bs-toggle="collapse" id="sideBarButton" data-bs-target="#home-collapse" aria-expanded="true" {...click}>
+            <button className="btn btn-toggle align-items-center collapsed border-0 w-100" data-bs-toggle="collapse" id="sideBarButton" data-bs-target="#home-collapse" aria-expanded="true">
               Home
             </button>
             <div className="collapse show" id="home-collapse">
@@ -66,7 +58,6 @@ const TestFile = () => {
             </button>
               <div className="collapse" id="account-collapse">
                 <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><Nav.Link to="/" as={Link} className="link-dark rounded mt-2 fs-6" id="linkz">New...</Nav.Link></li>
                   <li><Nav.Link to="/" as={Link} className="link-dark rounded mt-2 fs-6" id="linkz">Profile</Nav.Link></li>
                   <li><Nav.Link to="/" as={Link} className="link-dark rounded mt-2 fs-6" id="linkz">Settings</Nav.Link></li>
                   <li><Nav.Link to="/" as={Link} className="link-dark rounded mt-2 fs-6" id="linkz">Sign out</Nav.Link></li>
@@ -83,6 +74,17 @@ const TestFile = () => {
             <Nav.Link to="/" as={Link} id='bottomNav'>Home</Nav.Link>
             <Nav.Link to="/" as={Link} id='bottomNav'>Home</Nav.Link>
           </Navbar> */}
+          <div className='mt-5 pt-5' id='cardsNotify'>
+            <div className='card py-5 w-100'>
+              Tasks
+            </div>
+            <div className='card py-5 w-100'>
+              assigned
+            </div>
+            <div className='card py-5 w-100'>
+              messages
+            </div>
+          </div>
         </div>
       </div>
     </>

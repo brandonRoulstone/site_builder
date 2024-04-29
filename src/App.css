@@ -304,6 +304,13 @@
   color: #4f33ee !important;
 }
 
+#cardsNotify{
+  display: flex;
+  justify-content: center;
+  flex-direction: row !important;
+  gap: 10px;
+}
+
 @media (max-width: 555px) {
 
   #flexCol{
