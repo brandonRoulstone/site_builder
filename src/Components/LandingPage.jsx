@@ -36,10 +36,10 @@ const LandingPage = () => {
             </div>
 
             <div className="d-flex mt-2 gap-3 container-fluid" id='flexCol'>
-                <Nav.Link to="/friends" as={Link} className="btn py-4 px-4 fw-bold" id="btn">Friends <span className='float'>he</span></Nav.Link>
-                <Nav.Link to="/dashboard" as={Link} className="btn py-4 px-4 fw-bold" id="btn">Dashboard <span className='float'>he</span></Nav.Link>
-                <Nav.Link to="/profile" as={Link} className="btn py-4 px-4 fw-bold" id="btn">profile <span className='float'>he</span></Nav.Link>
-                <Nav.Link to="/buy" as={Link} className="btn py-4 px-4 fw-bold" id="btn">Buy premium <span className='float'>he</span></Nav.Link>
+                <Nav.Link to="/friends" as={Link} className="btn py-4 px-4 fw-bold" id="btn">Friends <span className='float'><i className="fa fa-user-o" aria-hidden="true"></i></span></Nav.Link>
+                <Nav.Link to="/dashboard" as={Link} className="btn py-4 px-4 fw-bold" id="btn">Dashboard <span className='float'>DB</span></Nav.Link>
+                <Nav.Link to="/profile" as={Link} className="btn py-4 px-4 fw-bold" id="btn">profile <span className='float'>Pr</span></Nav.Link>
+                <Nav.Link to="/buy" as={Link} className="btn py-4 px-4 fw-bold" id="btn">Buy premium <span className='float'>S</span></Nav.Link>
             </div>
             {/* <img src="https://cdn-images.imagevenue.com/a2/52/9f/ME183BNX_o.png" alt="" height={400} width={400} data-fitObj id="img"/> */}
             <div id="logo">

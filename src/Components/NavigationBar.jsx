@@ -17,7 +17,7 @@ function NavbarLayout() {
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
-              <Offcanvas.Header closeButton>
+              <Offcanvas.Header closeButton className='border-0'>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>TMUI</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

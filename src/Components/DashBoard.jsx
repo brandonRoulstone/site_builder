@@ -8,7 +8,7 @@ const TestFile = () => {
   return (
     <>
       <div id='dashBoard' className='mt-5'>
-        <div className="flex-shrink-0 p-3 bg-white" style={{width: '250px', height: '100vh'}}>
+        <div className="flex-shrink-0 p-3 bg-white" style={{width: '250px', height: '100vh', position: 'fixed', left: "0", zIndex: "1"}}>
         <Nav.Link to="/" as={Link} className="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
         <span className="fs-5 fw-semibold">Collapsible</span>
         </Nav.Link>
@@ -74,17 +74,19 @@ const TestFile = () => {
             <Nav.Link to="/" as={Link} id='bottomNav'>Home</Nav.Link>
             <Nav.Link to="/" as={Link} id='bottomNav'>Home</Nav.Link>
           </Navbar> */}
+
           <div className='mt-5 pt-5' id='cardsNotify'>
-            <div className='card py-5 w-100'>
+            <div className='card py-5 w-100' id='cardXv'>
               Tasks
             </div>
-            <div className='card py-5 w-100'>
+            <div className='card py-5 w-100' id='cardXv'>
               assigned
             </div>
-            <div className='card py-5 w-100'>
+            <div className='card py-5 w-100' id='cardXv'>
               messages
             </div>
           </div>
+          
         </div>
       </div>
     </>

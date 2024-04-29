@@ -304,11 +304,26 @@
   color: #4f33ee !important;
 }
 
+#containerOneChild{
+  background-color: hsl(240, 3%, 6%);
+  min-height: 100vh;
+}
+
 #cardsNotify{
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-direction: row !important;
   gap: 10px;
+}
+
+#cardXv{
+  border: 1px solid #00f7d2;
+  height: 200px;
+  width: 450px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 13px 30px 7px hsl(255, 49%, 19%);
 }
 
 @media (max-width: 555px) {
