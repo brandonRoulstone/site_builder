@@ -314,7 +314,8 @@
   width: 250px;
   position: fixed;
   left: 0%;
-  z-index: 1;
+  top: 7.24%;
+  z-index: 9999;
 }
 
 #close{
@@ -326,9 +327,9 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  left: 15%;
+  left: 14.3%;
   z-index: 220000;
-  top: 7%;
+  top: 7.2%;
   background-color: #3b0582;
   color: white;
 }
@@ -344,16 +345,92 @@
   border: 1px solid #7d2ae8;
 }
 
+.adjust_alignment{
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column !important;
+}
+
+.styledInput{
+  border: #4f33ee;
+  border-radius: 5px;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+}
+
 #cardXv{
   border: 1px solid #dabcff;
-  height: 200px;
+  height: 300px;
   width: 400px !important;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-out !important;
-  background-color: hsl(265, 31%, 40%);
+  background-color: #9433ee;
   box-shadow: 3px 3px 15px 1px hsl(0, 0%, 0%);
+}
+.primary_styled_btn{
+ position: relative;
+ padding: 10px 22px;
+ border-radius: 6px;
+ width: 100%;
+ border: none;
+ color: #fff;
+ cursor: pointer;
+ background-color: #7d2ae8;
+ transition: all 0.2s ease;
+}
+
+.primary_styled_btn:active {
+ transform: scale(0.96);
+}
+
+#color{
+ color: #7d2ae8;
+}
+
+.primary_styled_btn:before,
+.primary_styled_btn:after {
+ position: absolute;
+ content: "";
+ width: 150%;
+ left: 50%;
+ height: 100%;
+ transform: translateX(-50%);
+ z-index: -1000;
+ background-repeat: no-repeat;
+}
+
+.primary_styled_btn:hover:before {
+ top: -70%;
+ background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+ background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+   10% 10%, 18% 18%;
+ background-position: 50% 120%;
+ animation: greentopBubbles 0.6s ease;
+}
+
+.primary_styled_btn:hover::after {
+ bottom: -70%;
+ background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+   radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+ background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+ background-position: 50% 0%;
+ animation: greenbottomBubbles 0.6s ease;
 }
 
 #taskCard{
